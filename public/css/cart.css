@@ -1,0 +1,55 @@
+.container {
+    min-height: 60vh;
+    margin-bottom: 2em;
+}
+
+.trash img {
+    width: 32em;
+    height: auto;
+}
+
+.checkout-form {
+    min-height: 20em;
+}
+
+.checkout-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.checkout-form form label {
+    margin-bottom: 0.5em;
+}
+
+.checkout-form form button {
+    width: 20%;
+}
+
+.cart-table button {
+    width: 6em;
+    margin-bottom: 0.4em;
+    border-radius: 1.2em;
+}
+
+.cart-table img {
+    scale: 0.6;
+    border-radius: 2em;
+    margin-left: -4em;
+    margin-right: -2em;
+    width: 160px;
+    height: 160px;
+}
+
+tbody {
+    font-size: 12px;
+}
+
+.total-price {
+    font-weight: 700;
+}
+
+.grand-total {
+    font-weight: 900;
+    color: #3d8361;
+}

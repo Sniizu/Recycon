@@ -1,0 +1,67 @@
+.hometitle {
+    width: 100%;
+    margin-inline:auto;
+    height: 35em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: url('https://e0.pxfuel.com/wallpapers/1009/393/desktop-wallpaper-brands-old-fence-beer-cans-recycle-aluminium-soda.jpg');
+    background-size: cover;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+
+  background-size: 100%, 100%;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+.hometitle h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: rgba(255, 251, 0, 0.679);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.about h3 {
+    font-size: 40px;
+    color: #007705;
+}
+
+.about h5 {
+    margin-top: 2em;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 2em 1em;
+    border: 1px dashed #cc00ff;
+    border-radius: 12px;
+    transition: ease-in 0.2s;
+    color: #000000;
+}
+
+.about h5:hover {
+    background-color: #cc00ff;
+    color: #eef2e6;
+}

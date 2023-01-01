@@ -1,0 +1,76 @@
+.item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    background-color: rgba(241, 241, 241, 0.28);
+    max-width: 90%;
+    margin-left: 2em;
+    margin-bottom: 4em;
+}
+
+.form-row {
+    display: flex;
+    gap: 1em;
+}
+
+.form-row label {
+    margin-right: -0.5em;
+    margin-bottom: 0.2em;
+}
+
+.form-row input {
+    border-radius: 2em;
+    padding: 0.2em 0.3em;
+    width: 10em;
+}
+
+.form-row select {
+    border-radius: 2em;
+    padding: 0.2em 0.3em;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#desc {
+    width: 32em;
+    height: 10em;
+}
+
+.btn:not(.searchbar .btn) {
+    width: 12em;
+}
+
+.image input {
+    width: 16em;
+}
+
+.unchanged {
+    background-color: lightgray;
+    color: rgb(111, 111, 111);
+    border-radius: 2em;
+    border: 2px rgb(111, 111, 111) solid;
+    width: 8em;
+    height: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unchanged-img {
+    width: 14em;
+    height: 2em;
+}
+
+label {
+    font-weight: 500;
+}
+
+.update-image-form {
+    display: flex;
+    align-items: center;
+}

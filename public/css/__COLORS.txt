@@ -1,0 +1,13 @@
+// Green Color Palette
+
+#1C6758
+#3D8361
+#D6CDA4
+#EEF2E6
+
+
+// Blue Color Palette
+#E8F9FD
+#79DAE8
+#0AA1DD
+#2155CD

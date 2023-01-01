@@ -1,0 +1,61 @@
+.container {
+    margin-top: 2em;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    border-radius: 2em;
+    scale: 0.8;
+    min-width: 16em;
+}
+
+.trash img {
+    height: 32em;
+    width: auto;
+}
+
+.container .card img {
+    border-radius: 2em 2em 0em 0em;
+    margin-bottom: 1em;
+    height: auto;
+    width: 100%;
+}
+
+.custom-card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card h5 {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+    user-select: none;
+    transition: ease-in 0.2s;
+}
+
+.card h5:hover {
+    color: #ff0000;
+}
+
+.card h6,
+p {
+    font-size: 12px;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    text-align: right;
+}

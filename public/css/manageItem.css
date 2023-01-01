@@ -1,0 +1,43 @@
+.container {
+    margin: auto;
+    min-width: 95%;
+    margin-bottom: 2em;
+}
+
+th {
+    color: #000000;
+    font-size: smaller;
+}
+
+td {
+    min-height: 4em;
+    font-size: smaller;
+}
+
+.item-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+.update-delete {
+    display: flex;
+    align-items: top;
+}
+
+.update-delete form {
+    margin-left: -2.8em;
+}
+
+.update {
+    width: 5em;
+    height: 2.2em;
+}
+
+.update:hover {
+    background-color: #dda50a;
+}
+
+.no-items {
+    padding-top: 10em;
+    min-height: 70vh;
+}
