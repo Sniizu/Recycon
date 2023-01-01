@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class TransactionDetail extends Model
 {
     use HasFactory;
+    protected $table='transaction_details';
     public function transactionHeader(){
         return $this->belongsTo(TransactionHeader::class,'transaction_id');
     }

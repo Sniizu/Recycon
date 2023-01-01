@@ -10,7 +10,18 @@ use Illuminate\Support\Str;
 class Item extends Model
 {
     use HasFactory;
+    protected $table = 'items';
     protected $primaryKey = 'id';
+    public $incrementing = false;
+
+    protected $fillable = [
+        'id',
+        'name',
+        'price',
+        'category',
+        'image',
+        'description'
+    ];
     public function cartDetail()
     {
         return $this->hasMany(CartDetail::class, 'item_id');

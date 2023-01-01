@@ -174,7 +174,7 @@ class Controller extends BaseController
             'id' => 'required|unique:items|string|min:3|max:3',
             'name' => 'required|unique:items|string|max:20',
             'price' => 'required|numeric|gte:500',
-            'description' => 'required|string|max:100',
+            'description' => 'required|string|max:500',
             'image' => 'required|image',
             'category' => 'required|in:Second,Recycle'
         ]);
@@ -197,7 +197,7 @@ class Controller extends BaseController
     function runUpdateItem(Request $req, Item $product){
         $rules = [
             'price' => 'required|numeric|gte:500',
-            'description' => 'required|string|max:100',
+            'description' => 'required|string|max:500',
             'category' => 'required|in:Recycle,Second'
         ];
 

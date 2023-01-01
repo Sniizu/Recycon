@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,11 +28,11 @@ Route::put('/changePassword', [Controller::class, 'runChangePassword'])->name('r
 Route::get('/logout', [Controller::class, 'runLogout'])->name('logout');
 
 Route::get('/showProduct', [Controller::class, 'viewProducts'])->name('viewProducts');
-Route::get('/viewItem', [Controller::class, 'viewManageItem'])->middleware('checkrole:admin')->name('viewItem');
-Route::get('/addItem', [Controller::class, 'viewAddItem'])->name('addItem')->middleware('checkrole:admin');
+Route::get('/viewItem', [Controller::class, 'viewManageItem'])->middleware('authenticaterole:admin')->name('viewItem');
+Route::get('/addItem', [Controller::class, 'viewAddItem'])->name('addItem')->middleware('authenticaterole:admin');
 Route::post('/addItem', [Controller::class, 'runAddItem']);
 Route::get('/products/{product:id}', [Controller::class, 'viewProductDetail'])->name('productDetail');
-Route::get('/updateItem/{product:id}', [Controller::class, 'viewUpdateItem'])->name('updateItem')->middleware('checkrole:admin');
+Route::get('/updateItem/{product:id}', [Controller::class, 'viewUpdateItem'])->name('updateItem')->middleware('authenticaterole:admin');
 Route::put('/updateItem/{product:id}', [Controller::class, 'runUpdateItem']);
 Route::delete('/deleteItem/{product:id}', [Controller::class, 'deleteItem']);
 
@@ -41,5 +42,5 @@ Route::get('/updateCartqty/{product:id}', [Controller::class, 'viewUpdateCart'])
 Route::put('/updateCartItem', [Controller::class, 'runUpdateCartqty']);
 Route::post('/deleteCartItem', [Controller::class, 'runDeleteCartItem']);
 
-Route::get('/transactionHistory', [Controller::class, 'viewTransaction'])->middleware('checkrole:customer')->name('transactionHistory');
+Route::get('/transactionHistory', [Controller::class, 'viewTransaction'])->middleware('authenticaterole:customer')->name('transactionHistory');
 Route::post('/checkout', [Controller::class, 'runCheckout']);
